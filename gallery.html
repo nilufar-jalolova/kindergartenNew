@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kindergarden website</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-md navbar-light  sticky-top mt-0 shift">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <h3 class="text-center ">Logo</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarResponsive" class="collapse navbar-collapse ">
+                <ul class="navbar-nav shift nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item  active">
+                        <a class="nav-link" href="gallery.html">Galereya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Yangiliklar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stuff.html">Hodimlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacts">Biz bilan bog'laning!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- gallery -->
+    <div class="container-fluid popup-gallery">
+        <h3 class="display-4 mt-4 mb-4 text-center">Galereya</h3>
+        <div class="row mt-4">
+            <div class="item1 col-sm-6 col-md-4 mb-3">
+                <a href="img/banner2.jpg" title="The Cleaner"><img src="img/banner2.jpg" width="100%" height="100%"></a>
+            </div>
+            <div class="item1 col-sm-6 col-md-4 mb-3">
+                <a href="img/baby1.jpeg" title="Winter Dance"><img src="img/baby1.jpeg" width="100%" height="100%"></a>
+            </div>
+            <div class="item1 col-sm-6 col-md-4 mb-3">
+                <a href="img/baby2.jpeg" title="The Uninvited Guest"><img src="img/baby2.jpeg" width="100%" height="100%"></a>
+            </div>
+            <div class="item1 col-sm-6 col-md-4 mb-3">
+                <a href="img/baby3.jpeg" title="Oh no, not again!"><img src="img/baby3.jpeg" width="100%" height="100%"></a>
+            </div>
+            <div class="item1 col-sm-6 col-md-4 mb-3">
+                <a href="img/baby4.jpeg" title="Swan Lake"><img src="img/baby4.jpeg" width="100%" height="100%"></a>
+            </div>
+            <div class="item1 col-sm-6 col-md-4 mb-3">
+                <a href="img/baby5.jpeg" title="The Shake"><img src="img/baby5.jpeg" width="100%" height="100%  "></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+
+    <footer class="deneb_footer">
+
+        <div class="copyright_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright_text">
+                            <p>Copyright &copy; 2021 | Designed by Student of NAPA academy Jalolova Nilufar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-->
+
+
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.popup-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function(item) {
+                        return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+                    }
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

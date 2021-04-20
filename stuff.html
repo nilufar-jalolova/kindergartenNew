@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kindergarden website</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+</head>
+<style>
+    body {
+        background: #eef5f9;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0 solid transparent;
+        border-radius: 0;
+    }
+    
+    .el-element-overlay .white-box {
+        padding: 0
+    }
+    
+    .el-element-overlay .el-card-item {
+        position: relative;
+        padding-bottom: 20px
+    }
+    
+    .el-element-overlay .el-card-item .el-card-avatar {
+        margin-bottom: 20px;
+    }
+    
+    .el-element-overlay .el-card-item .el-card-content {
+        text-align: center
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1 {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1 img {
+        display: block;
+        position: relative;
+        -webkit-transition: all .4s linear;
+        transition: all .4s linear;
+        width: 100%;
+        height: auto
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1:hover img {
+        -ms-transform: scale(1.2) translateZ(0);
+        -webkit-transform: scale(1.2) translateZ(0)
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1 .el-info {
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: transparent;
+        filter: alpha(opacity=0);
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        padding: 0;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%) translateZ(0);
+        -webkit-transform: translateY(-50%) translateZ(0);
+        -ms-transform: translateY(-50%) translateZ(0)
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1 .el-info .el-item {
+        list-style: none;
+        display: inline-block;
+        margin: 0 3px
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1 .el-info .el-item .el-link {
+        border-color: #fff;
+        color: #fff;
+        padding: 12px 15px 10px
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1 .el-info .el-item .el-link:hover {
+        background: #2962FF;
+        border-color: #2962FF
+    }
+    
+    .gmaps-overlay_arrow.above,
+    .gmaps-overlay_arrow.below {
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, .7);
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1:hover .el-overlay {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1 .scrl-dwn {
+        top: -100%
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1 .scrl-up {
+        top: 100%;
+        height: 0
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1:hover .scrl-dwn {
+        top: 0
+    }
+    
+    .el-element-overlay .el-card-item .el-overlay-1:hover .scrl-up {
+        top: 0;
+        height: 100%
+    }
+</style>
+
+<body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top mt-0 shift">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <h3 class="text-center ">Logo</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarResponsive" class="collapse navbar-collapse ">
+                <ul class="navbar-nav shift nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galereya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Yangiliklar</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="stuff.html">Hodimlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Biz bilan bog'laning!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- stuff -->
+    <h3 class="display-4 mt-4 mb-4 text-center">Hodimlar</h3>
+    <div class="container">
+        <div class="row el-element-overlay">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="el-card-item">
+                        <div class="el-card-avatar el-overlay-1"> <img src="img/teacher2.jpg" alt="user">
+                            <div class="el-overlay">
+                                <ul class="list-style-none el-info">
+                                    <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="img/teacher2.jpg"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="el-card-content">
+                            <h4 class="m-b-0">Lorem Ipsum</h4> <span class="text-muted">Direktor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="el-card-item">
+                        <div class="el-card-avatar el-overlay-1"> <img src="img/director.jpg" alt="user">
+                            <div class="el-overlay">
+                                <ul class="list-style-none el-info">
+                                    <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="img/director.jpg"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="el-card-content">
+                            <h4 class="m-b-0">Lorem Ipsum</h4> <span class="text-muted">Lorem Ipsum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="el-card-item">
+                        <div class="el-card-avatar el-overlay-1"> <img src="img/teacher.jpg" alt="user">
+                            <div class="el-overlay">
+                                <ul class="list-style-none el-info">
+                                    <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="img/teacher.jpg"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="el-card-content">
+                            <h4 class="m-b-0">Lorem Ipsum</h4> <span class="text-muted">Lorem Ipsum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="el-card-item">
+                        <div class="el-card-avatar el-overlay-1"> <img src="img/teacher5.jpg" alt="user">
+                            <div class="el-overlay">
+                                <ul class="list-style-none el-info">
+                                    <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="img/teacher5.jpg"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="el-card-content">
+                            <h4 class="m-b-0">Lorem Ipsum</h4> <span class="text-muted">Lorem Ipsum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="el-card-item">
+                        <div class="el-card-avatar el-overlay-1"> <img src="img/teacher5.jpg" alt="user">
+                            <div class="el-overlay">
+                                <ul class="list-style-none el-info">
+                                    <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="img/teacher5.jpg"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="el-card-content">
+                            <h4 class="m-b-0">Lorem Ipsum</h4> <span class="text-muted">Lorem Ipsum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="el-card-item">
+                        <div class="el-card-avatar el-overlay-1"> <img src="img/teacher5.jpg" alt="user">
+                            <div class="el-overlay">
+                                <ul class="list-style-none el-info">
+                                    <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="img/teacher5.jpg"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="el-card-content">
+                            <h4 class="m-b-0">Lorem Ipsum</h4> <span class="text-muted">Lorem Ipsum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="el-card-item">
+                        <div class="el-card-avatar el-overlay-1"> <img src="img/teacher5.jpg" alt="user">
+                            <div class="el-overlay">
+                                <ul class="list-style-none el-info">
+                                    <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="img/teacher5.jpg"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="el-card-content">
+                            <h4 class="m-b-0">Lorem Ipsum</h4> <span class="text-muted">Lorem Ipsum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="el-card-item">
+                        <div class="el-card-avatar el-overlay-1"> <img src="img/teacher5.jpg" alt="user">
+                            <div class="el-overlay">
+                                <ul class="list-style-none el-info">
+                                    <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="img/teacher5.jpg"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="el-card-content">
+                            <h4 class="m-b-0">Lorem Ipsum</h4> <span class="text-muted">Lorem Ipsum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+
+
+        <footer class="deneb_footer">
+
+            <div class="copyright_area container-fluid">
+                <div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="copyright_text">
+                                <p>Copyright &copy; 2021 | Designed by Student of NAPA academy Jalolova Nilufar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-->
+
+
+
+
+
+
+
+
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+        <script src="js/jquery.bootstrap.newsbox.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>

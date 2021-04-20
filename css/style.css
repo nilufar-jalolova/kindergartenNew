@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333456;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background: #709fb0;
+    backface-visibility: visible;
+    opacity: 0.9;
+    /* padding: 50px 0; */
+    /* box-shadow: 0px 5px 0px #dedede; */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    /* padding: 10px; */
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: 530;
+    /* text-transform: uppercase; */
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+
+/* SHIFT */
+
+nav.shift ul li a {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-item.active {
+    color: #F1C40F !important
+}
+
+nav.shift ul li a:hover {
+    color: #5b5b5b;
+}
+
+nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #F1C40F;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+.nav-link {
+    font-size: 18px !important;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+.carousel-inner img {
+    width: 100%;
+    ;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 30%;
+    /* transform: translateY(%); */
+    box-sizing: border-box;
+}
+
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-caption h1 {
+    color: #fafafa;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .carousel-caption {
+        display: none;
+    }
+    .carousel-item {
+        height: 220px;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .navbar {
+        width: 600px;
+        position: relative;
+        width: inherit;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    #counter {
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (max-device-width: 992px) {
+    #counter {
+        margin-top: 300px;
+    }
+}
+
+.carousel-caption p {
+    color: #b1b1b1;
+    font-size: inherit;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+}
+
+hr {
+    width: 700px;
+    min-height: 2px;
+    color: brown;
+}
+
+#main_gallery {
+    background-image: url(../img/background3.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+}
+
+.item:hover {
+    filter: brightness(70%);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
+}
+
+.item {
+    transition: .5s ease-in-out;
+}
+
+
+/*Zoom In*/
+
+#zoomIn img {
+    /* -webkit-transform: scale(0.5); */
+    /* transform: scale(1); */
+    /* -webkit-transition: .3s ease-in-out; */
+    transition: .3s ease-in-out;
+}
+
+#zoomIn:hover img {
+    transform: scale(0.7);
+}
+
+.news-img img {
+    width: 100%;
+}
+
+.latest-news-area {
+    margin-top: 40px;
+}
+
+.latest-news-wrap {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.news-img {
+    position: relative;
+}
+
+.news-img::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: "";
+    opacity: 0;
+    transform: scale(.8);
+    transition: all 0.5s;
+}
+
+.latest-news-wrap:hover .news-img::before {
+    opacity: 0.5;
+    transform: scale(1);
+}
+
+.deat {
+    background: #f89406 none repeat scroll 0 0;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    padding: 10px;
+}
+
+.deat span {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.news-content {
+    padding: 20px;
+    margin-left: 3px;
+}
+
+.news-content i {
+    font-size: 18px;
+    display: inline-block;
+}
+
+.news-content .fab {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.news-content .fa-facebook {
+    color: #3b5995;
+}
+
+.news-content .fa-telegram {
+    color: #1c48d6;
+}
+
+.news-content p {
+    text-align: justify;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.news-content a {
+    background-color: #e0ad23;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: white;
+    transition: all 0.5s ease-in;
+}
+
+.news-content a:hover {
+    font-size: 14px;
+    border: 1px solid #34495e;
+    border-top-right-radius: 20px;
+    background-color: white;
+    color: #34495e;
+    text-decoration: none;
+}
+
+.fas {
+    margin-right: 4px !important;
+    /*override*/
+}
+
+.fas .glyphicon {
+    margin-right: 0px !important;
+    /*override*/
+}
+
+.pagination a {
+    color: #555;
+}
+
+.card ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.news-item {
+    padding: 4px 4px;
+    margin: 0px;
+    border-bottom: 1px dotted #555;
+}
+
+
+/* counter */
+
+.counter {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-2x {
+    color: #4ad1e5;
+}
+
+.fas .far {
+    text-align: center;
+}
+
+
+/* footer */
+
+.deneb_footer .widget_wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.deneb_footer .copyright_area {
+    background: #709fb0;
+    padding: 10px 0;
+}
+
+.deneb_footer .copyright_area .copyright_text {
+    text-align: center;
+}
+
+.deneb_footer .copyright_area .copyright_text p {
+    color: #011a3e;
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.contact-area {
+    height: auto;
+    width: 100%;
+}
+
+.contact-content {
+    padding: 100px;
+    background: #000 none repeat scroll 0 0;
+}
+
+.contact-content-right {
+    padding: 100px;
+}
+
+.single-icon i {
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    line-height: 56px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    color: #3ec1d5;
+}
+
+.single-icon p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.contact-icon {
+    margin-bottom: 40px;
+}
+
+#google-map {
+    height: 370px;
+    margin-bottom: 20px;
+}
+
+.php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+.php-email-form input,
+.php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.php-email-form input:focus,
+.php-email-form textarea:focus {
+    border-color: #3ec1d5;
+}
+
+.php-email-form input {
+    padding: 10px 15px;
+}
+
+.php-email-form textarea {
+    padding: 12px 15px;
+}
+
+.php-email-form button[type="submit"] {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    border-radius: 30px;
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
